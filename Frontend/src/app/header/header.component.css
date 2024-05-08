@@ -1,0 +1,53 @@
+.barramovil{
+    display: none !important;
+}
+
+.barrapc{
+    display: block;
+}
+
+.navbar{
+    background-color: #fff !important;
+}
+
+.icon-menu {
+    width: 34px;
+    font-size: 34px;
+}
+
+.iconosder{
+    width: 25px;
+    font-size: 25px;
+}
+
+.iconocarrito{
+    width: 30px;
+    font-size: 30px;
+}
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.iconohamb{
+    width: 100%;
+}
+
+.width100{
+    width: 100%;
+}
+
+@media only screen and (max-width:990px){
+    .barramovil{
+        display: flex !important;
+        flex: 1;
+    }
+
+    .barrapc{
+        display: none !important;
+    }
+
+    .container{
+        max-width: none;
+    }
+}

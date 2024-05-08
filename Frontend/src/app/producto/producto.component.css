@@ -1,0 +1,42 @@
+.producto{
+    border: none;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 328px;
+    margin: 0 auto;
+}
+
+.contenido{
+    padding: 10px;
+    min-height: 110px;
+}
+
+.colorimg{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 0.5px solid #ddd;
+    margin-right: 0.5em;
+}
+
+.titulo, .colores{
+    margin-bottom: 5px;
+}
+
+.cont-imagen{
+    position:relative
+}
+
+.iconointerior {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.iconocorazon{
+    margin: 10px;
+    width: 27px;
+}

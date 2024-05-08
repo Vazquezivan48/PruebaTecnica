@@ -1,0 +1,30 @@
+<div class="producto">
+    <!--Imagen del producto-->
+    <div class="cont-imagen">
+        <a class="iconointerior" href="#">
+            <img class="iconocorazon" src="/assets/iconos/heart-regular.svg">
+        </a>
+        <img class="img-fluid" src="{{arreglorecibido.imagen}}">
+    </div>
+    <!--Fin imagen del producto-->
+    <div class="contenido">
+        <!--Título-->
+        <div>
+            <p class="titulo">{{arreglorecibido.nombre}}</p>
+        </div>
+        <!--Fin titulo-->
+        <!--sección de colores-->
+        <div class="colores d-flex">
+            <a class="" *ngFor="let color of arreglorecibido.colores">
+                <div class="colorimg" [ngStyle]="{background: color.color}">
+                </div>
+            </a>
+        </div>
+        <!--Fin sección de colores-->
+        <!--Precio-->
+        <div class="precio">
+            <p>${{arreglorecibido.precio | number : '1.2-2'}}</p>
+        </div>
+        <!--Fin precio-->
+    </div>
+</div>

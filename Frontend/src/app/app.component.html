@@ -1,0 +1,19 @@
+<!--Iniciar el Header-->
+<div class="app-header">
+  <app-header></app-header>
+</div>
+<!--Termina el header-->
+<!--Inicia el contenedor-->
+<div class="container">
+    <div class="titulo">
+      <h3>Hombres <span class="colortotal">({{total}})</span></h3>
+    </div>
+    <!--Contenedor de los productos-->
+    <div class="row">
+      <div *ngFor="let producto of listado" class="col-lg-3 col-sm-6 col-6">
+        <app-producto [arreglorecibido]="producto"></app-producto>
+      </div>
+    </div>
+    <!--Fin contenedor productos-->
+</div>
+<!--Termina el contedor-->
